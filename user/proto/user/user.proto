@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package go.micro.srv.user;
+
+service User {
+	rpc Register(RegisterRequest)returns(Response){}
+	rpc Login(LoginRequest)returns(Response){}
+	rpc UpdatePassword(UpdatePasswordResquset)returns(Response){}
+
+}
